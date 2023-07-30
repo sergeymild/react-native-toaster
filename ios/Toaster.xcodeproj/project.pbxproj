@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E555C0D2413F4C50049A1A2 /* Toaster.mm in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* Toaster.mm */; };
-		F4FF95D7245B92E800C19C63 /*  Toaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /*  Toaster.swift */; };
+		8DD8FF382A76353200B95200 /* ToasterViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DD8FF362A76353200B95200 /* ToasterViewManager.m */; };
+		8DD8FF392A76353200B95200 /* ToasterViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD8FF372A76353200B95200 /* ToasterViewManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,9 +25,9 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libToaster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libToaster.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E7B5891CC2AC0600A0062D /* Toaster.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toaster.mm; sourceTree = "<group>"; };
+		8DD8FF362A76353200B95200 /* ToasterViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToasterViewManager.m; sourceTree = "<group>"; };
+		8DD8FF372A76353200B95200 /* ToasterViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToasterViewManager.swift; sourceTree = "<group>"; };
 		F4FF95D5245B92E700C19C63 /* Toaster-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Toaster-Bridging-Header.h"; sourceTree = "<group>"; };
-		F4FF95D6245B92E800C19C63 /* Toaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toaster.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +52,9 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				F4FF95D6245B92E800C19C63 /* Toaster.swift */,
-				B3E7B5891CC2AC0600A0062D /* Toaster.mm */,
 				F4FF95D5245B92E700C19C63 /* Toaster-Bridging-Header.h */,
+				8DD8FF362A76353200B95200 /* ToasterViewManager.m */,
+				8DD8FF372A76353200B95200 /* ToasterViewManager.swift */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,8 +116,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4FF95D7245B92E800C19C63 /* Toaster.swift in Sources */,
-				B3E7B58A1CC2AC0600A0062D /* Toaster.mm in Sources */,
+				8DD8FF382A76353200B95200 /* ToasterViewManager.m in Sources */,
+				8DD8FF392A76353200B95200 /* ToasterViewManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
