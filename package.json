@@ -1,7 +1,7 @@
 {
   "name": "react-native-toaster",
   "version": "0.1.0",
-  "description": "Toast messages for React Native",
+  "description": "Animated toast message component for React Native.",
   "main": "src/index",
   "module": "src/index",
   "react-native": "src/index",
