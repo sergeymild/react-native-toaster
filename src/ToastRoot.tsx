@@ -13,7 +13,7 @@ export type ToastConfig = {
   [k: string]: (params: any) => React.ReactElement;
 };
 
-type Duration = { present?: number; dismiss?: number; show?: number };
+type Duration = { present?: number; dismiss?: number; visible?: number };
 
 export function configureToasts<T extends ToastConfig, K extends keyof T>(
   config: T
