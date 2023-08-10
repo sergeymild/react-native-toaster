@@ -14,7 +14,7 @@ Animated toast message component for React Native.
 
 ```sh
 # add to package.json
-"react-native-toaster": "sergeymild/react-native-toaster#0.2.1"
+"react-native-toaster": "sergeymild/react-native-toaster#0.2.2"
 ```
 
 ## Usage
