@@ -23,7 +23,7 @@ class DialogRootViewGroup(context: Context) : ViewGroup(context), RootView {
   private val mJSTouchDispatcher = JSTouchDispatcher(this)
   private var mJSPointerDispatcher: JSPointerDispatcher? = null
   var reactView: View? = null
-  private var showDuration: Long = 250
+  private var visibleDuration: Long = 250
   private var presentDuration: Long = 4000
   private var dismissDuration: Long = 250
 
@@ -53,12 +53,12 @@ class DialogRootViewGroup(context: Context) : ViewGroup(context), RootView {
       translationY = -h
       visibility = VISIBLE
       presentAnimation = animate()
-        .setDuration(showDuration)
+        .setDuration(presentDuration)
         .translationY(0f)
         .withEndAction {
           presentAnimation = null
           dismissAnimation = animate()
-            .setStartDelay(showDuration)
+            .setStartDelay(visibleDuration)
             .setDuration(dismissDuration)
             .translationY(-(layoutParams!!.height.toFloat()))
             .withEndAction(::dismiss)
@@ -138,7 +138,7 @@ class DialogRootViewGroup(context: Context) : ViewGroup(context), RootView {
     visibility = GONE
     parent.addView(this)
     params?.let {
-      showDuration = (it.getDouble("showDuration").toLong())
+      visibleDuration = (it.getDouble("visibleDuration").toLong())
       presentDuration = (it.getDouble("presentDuration").toLong())
       dismissDuration = (it.getDouble("presentDuration").toLong())
     }

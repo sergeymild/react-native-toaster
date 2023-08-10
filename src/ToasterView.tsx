@@ -14,7 +14,7 @@ interface Props {
 }
 
 interface Duration {
-  show?: number;
+  visible?: number;
   present?: number;
   dismiss?: number;
 }
@@ -30,7 +30,7 @@ export class ToasterView extends React.Component<Props, State> {
     super(props);
     this.state = {
       show: false,
-      duration: { dismiss: 250, present: 250, show: 4000 },
+      duration: { dismiss: 250, present: 250, visible: 4000 },
     };
   }
 
@@ -56,7 +56,7 @@ export class ToasterView extends React.Component<Props, State> {
 
   private toasterParams() {
     return {
-      showDuration: this.state.duration.show ?? 250,
+      visibleDuration: this.state.duration.visible ?? 250,
       presentDuration: this.state.duration.present ?? 4000,
       dismissDuration: this.state.duration.dismiss ?? 250,
     };

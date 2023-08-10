@@ -35,7 +35,7 @@ private class ModalHostShadowView: RCTShadowView {
 
 class ContainerView: UIView {
     var presentDuration: TimeInterval = 0.25
-    var showDuration: TimeInterval = 4
+    var visibleDuration: TimeInterval = 4
     var dismissDuration: TimeInterval = 0.25
     var task: DispatchWorkItem?
     var onDismissCallback: (() -> Void)?
@@ -84,9 +84,9 @@ class ContainerView: UIView {
                 self.onDismissCallback = nil
             }
         })
-        debugPrint("😀 show duration: \(showDuration)")
+        debugPrint("😀 show duration: \(visibleDuration)")
         DispatchQueue.main.asyncAfter(
-            deadline: .now() + showDuration,
+            deadline: .now() + visibleDuration,
             execute: task!
         )
     }
@@ -146,8 +146,8 @@ private class HostToasterView: UIView {
                 containerView.presentDuration = duration / 1000.0
             }
             
-            if let duration = toasterParams?["showDuration"] as? TimeInterval {
-                containerView.showDuration = duration / 1000.0
+            if let duration = toasterParams?["visibleDuration"] as? TimeInterval {
+                containerView.visibleDuration = duration / 1000.0
             }
             
             if let duration = toasterParams?["dismissDuration"] as? TimeInterval {
