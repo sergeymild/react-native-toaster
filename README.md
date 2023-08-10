@@ -79,7 +79,7 @@ export function Foo(props) {
       key: 'warning',
       // depends of passed key here will be strongly typed params
       props: { message: 'warning' },
-      // show - means animation duration for show message
+      // visible - means animation duration for show message
       // present - means animation duration for how long message will be displayed on screen
       // dismiss - means animation duration for how fast it will dissapear
       duration: { show: 1000, present: 250, dismiss: 250 },
